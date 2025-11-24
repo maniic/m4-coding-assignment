@@ -37,7 +37,7 @@ public class StatementPrinter {
                 case "tragedy":
                     thisAmount = Constants.TRAGEDY_BASE_AMOUNT;
                     if (p.getAudience() > Constants.TRAGEDY_AUDIENCE_THRESHOLD) {
-                        thisAmount += Constants.COMEDY_OVER_BASE_CAPACITY_PER_PERSON
+                        thisAmount += Constants.TRAGEDY_OVER_BASE_CAPACITY_PER_PERSON
                                 * (p.getAudience() - Constants.TRAGEDY_AUDIENCE_THRESHOLD);
                     }
                     break;
